@@ -1,6 +1,7 @@
 table {
     border: 1px solid black;
     margin: 20px;
+    padding: 20px;
 }
 
 #premier {
@@ -26,3 +27,28 @@ a:hover {
 
 /* :focus */
 /* sert à cibler les élément ayants le focus utilisateur */
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+li {
+    font-family: Arial;
+}
+
+th {
+    color: red;
+}
+
+html {
+    background: #e2e2e2;
+}
+
+img {
+    border-bottom: green 4px solid;
+    width: 400px;
+}
+
+ol {
+    list-style: none;
+}
