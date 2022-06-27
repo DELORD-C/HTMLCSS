@@ -126,19 +126,19 @@
             <p>On définit un formulaire avec la balise form</p>
             <form action="" method="get">
                 <label for="nom">Nom</label>
-                <input type="text" id="nom" placeholder="ex : Marc" name="nom">
+                <input type="text" id="nom" placeholder="ex : Marc" name="nom" minlength="4" required>
                 <br>
                 <label for="date">Date</label>
-                <input type="date" id="date" name="date">
+                <input type="date" id="date" name="date" required>
                 <br>
                 <label for="type">Type</label>
-                <select name="type" id="type">
+                <select name="type" id="type" required>
                     <option value="pro">Professionnel</option>
                     <option value="particulier">Particulier</option>
                 </select>
                 <br>
-                <la bel for="message">Message</label>
-                <textarea name="message" id="message" placeholder="ex : Bonjour, j'ai besoin d'aide."></textarea>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="ex : Bonjour, j'ai besoin d'aide." required></textarea>
                 <br>
                 <input type="submit" value="Envoyer">
             </form>

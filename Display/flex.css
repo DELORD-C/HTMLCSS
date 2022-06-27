@@ -1,0 +1,27 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: aliceblue;
+    
+}
+
+h1 {
+    margin: 0;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+#flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
