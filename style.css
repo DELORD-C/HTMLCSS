@@ -1,0 +1,28 @@
+table {
+    border: 1px solid black;
+    margin: 20px;
+}
+
+#premier {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+a:hover {
+    font-size: larger;
+}
+
+/* :checked */
+/* sert à cibler les cases à coché cochées */
+
+/* :visited */
+/* sert à cibler les liens qui ont déjà été visités */
+
+/* :active { */
+/* sert à cibler les élément ayants le focus clic utilisateur */
+
+/* :focus */
+/* sert à cibler les élément ayants le focus utilisateur */

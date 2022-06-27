@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Bases</title>
+</head>
+<body>
+    <!-- Les commentaires ne sont pas affichés par le navigateur -->
+    <!-- Ceci est une balise de titre principale -->
+    <h1>Les Bases</h1>
+    <section>
+        <h2>Les balises de contenu</h2>
+            <section>
+                <h3>Les balises de titre</h3>
+                <p>
+                    Les balises de titre sont les balises hn (n étant un chiffre de 1 à 6)
+                    Il est important de respecter la hierarchie des titre (h1 > h2 > h3 etc...)
+                </p>
+            </section>
+
+            <section>
+                <h3>Les paragraphes</h3>
+                <p>La balise p permet de définir un paragraphe.</p>
+            </section>
+            <section>
+                <h3>Les balises de mise en forme du texte</h3>
+                <p>La balise strong ou b permet de mettre en <b>gras</b> et/ou en <strong>avant</strong> un élément</p>
+                <p>La balise i ou em permet de mettre du texte en <i>italique</i> et/ou en <em>valeur</em></p>
+                <p>La balise u permet de <u>souligner</u> du texte</p>
+            </section>
+
+            <section>
+                <h3>Les liens hypertexte</h3>
+                <p>La balise a permet de créer un <a href="https://google.fr" target="_blank">lien</a></p>
+                <p>L'attribut href est nécessaire pour spécifier la cible du lien</p>
+                <p>L'attribut target est facultatif et permet de changer le comportement du lien (ouvrir dans un nouvel onglet)</p>
+
+                <p>On peut créer un lien qui ouvrira un email grâce à <a href="mailto:contact@dawan.fr">mailto</a></p>
+
+                <p>On peut aussi faire la même chose avec un numéro de téléphone grâce à <a href="tel:+3362525252">tel</a></p>
+            </section>
+            
+            <section>
+                <h3>Les listes</h3>
+                <section>
+                    <h4>Liste non ordonnée</h4>
+                    <p>La balise ul permet de créer une liste non ordonnée</p>
+                    <ul>
+                        <li>Element 1</li>
+                        <li>Element 2</li>
+                        <li>Element 3</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Liste ordonnée</h4>
+                    <p>La balise ol permet de créer une liste ordonnée</p>
+                    <ol>
+                        <li>Element</li>
+                        <li>Element</li>
+                        <li>Element</li>
+                    </ol>
+                </section>
+            </section>
+            <section>
+                <h3>Les tableaux</h3>
+                <p>La balise table permet de définir un tableau</p>
+                <p>Un tableau est composé d'une entête (thead) et d'un corps (tbody)</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>Téléphone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>DELORD</td>
+                            <td>Clément</td>
+                            <td>0605285987</td>
+                        </tr>
+                        <tr>
+                            <td>MOUSTAKI</td>
+                            <td>Georges</td>
+                            <td>0687546598</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+        <section>
+            <h2>Les balises de structure</h2>
+            <p>Les balises de structure servent à structure le contenu d'une page html</p>
+            <ul>
+                <li>div : sert à créer un conteneur en bloc</li>
+                <li>span : sert à créer un conteneur en ligne</li>
+                <li>header : sert à définir la partie haute de la page</li>
+                <li>footer : sert à définir la partie basse de la page</li>
+                <li>article : sert à définir un contenu autonome sur une page</li>
+                <li>section : sert à définir une section de contenu, celle-ci démarrera par un titre</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Les Medias</h2>
+            <p>Les images sont intégrés avec la balise img</p>
+            <img src="icon.png">
+            <p>Les videos sont intégrées avec la balise video, qui contient une balise source, ayant un attribut src</p>
+            <p>Les attributs de la balise video :</p>
+            <ul>
+                <li>controls : afficher les contrôles</li>
+                <li>width : largeur de la vidéo</li>
+                <li>autoplay : lecture automatique</li>
+                <li>loop : lecture en boucle</li>
+                <li>muted : couper le son de la vidéo</li>
+            </ul>
+            <video controls width="500" autoplay loop muted>
+                <source src="exemple.mp4">
+            </video>
+            <p>Les balises audio</p>
+            <audio controls src="exemple.mp3"></audio>
+        </section>
+        <section>
+            <h2>Les formulaires</h2>
+            <p>On définit un formulaire avec la balise form</p>
+            <form action="" method="get">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" placeholder="ex : Marc" name="nom">
+                <br>
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date">
+                <br>
+                <label for="type">Type</label>
+                <select name="type" id="type">
+                    <option value="pro">Professionnel</option>
+                    <option value="particulier">Particulier</option>
+                </select>
+                <br>
+                <la bel for="message">Message</label>
+                <textarea name="message" id="message" placeholder="ex : Bonjour, j'ai besoin d'aide."></textarea>
+                <br>
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+</body>
+</html>
