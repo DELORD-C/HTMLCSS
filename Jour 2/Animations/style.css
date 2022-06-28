@@ -1,0 +1,38 @@
+button {
+    color: #925518;
+    border: 1px solid #925518;
+    background: none;
+    border-radius: 12px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:active {
+    font-size: 10px;
+    padding: 17px 26px;
+}
+
+button:hover {
+    background-color: #925518;
+    color: #fff;
+}
+
+img {
+    animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+p {
+    text-align: center;
+    width: 300px;
+}
