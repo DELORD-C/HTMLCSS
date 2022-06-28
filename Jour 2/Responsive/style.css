@@ -25,9 +25,29 @@ body {
     font-size: 30px;
 }
 
+#articles {
+    display: grid;
+}
+
 @media screen and (max-width: 600px) {
     html {
         font-size: 18px;
+    }
+
+    #articles h2 {
+        font-size: smaller;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #articles p {
+        font-size: larger;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    img {
+        display: none;
     }
 }
 
@@ -58,3 +78,10 @@ body {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+
+@media screen and (min-width: 900px) {
+    #articles {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
