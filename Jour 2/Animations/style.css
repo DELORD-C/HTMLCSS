@@ -56,4 +56,32 @@ span {
     position: absolute;
     top: 0;
     left: 0;
+    animation: tour 10s linear infinite;
+}
+
+@keyframes tour {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        top: 0;
+        left: calc(100vw - 20px);
+    }
+
+    50% {
+        top: calc(100vh - 20px);
+        left: calc(100vw - 20px);
+    }
+
+    75% {
+        top: calc(100vh - 20px);
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
 }

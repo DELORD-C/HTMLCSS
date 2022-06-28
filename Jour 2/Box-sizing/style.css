@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    /* box-sizing: content-box; */
+}
+
+body {
+    margin: 0;
+}
+
+#div {
+    height: 100vh;
+    padding: 20px;
+}
