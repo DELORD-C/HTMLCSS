@@ -35,4 +35,25 @@ img {
 p {
     text-align: center;
     width: 300px;
+    animation: Yrotation 5s infinite linear;
+}
+
+@keyframes Yrotation {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+span {
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
