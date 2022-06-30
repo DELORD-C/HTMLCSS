@@ -5,6 +5,10 @@
     color: #fff;
 }
 
+html {
+    font-size: 24px;
+}
+
 body {
     margin: 0;
     background-color: #2a2a2a;
@@ -24,7 +28,7 @@ header {
 
 header a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1em;
     margin: 20px;
 }
 
@@ -44,7 +48,7 @@ h1 {
 #first p {
     font-style: italic;
     color: #9e3c3c;
-    font-size: 35px;
+    font-size: 1.5em;
 }
 
 #blue, #last {
@@ -58,10 +62,12 @@ h1 {
 
 #blue div {
     display: flex;
+    justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
     max-width: 1400px;
-    margin: 50px 0;
+    margin: 50px auto;
+    width: 100%;
 }
 
 #blue h2 {
@@ -73,7 +79,7 @@ h1 {
 }
 
 article {
-    width: calc((100% - 60px) / 3);
+    width: calc(30% - 10px);
 }
 
 article img {
@@ -82,11 +88,15 @@ article img {
 
 article h3 {
     background-color: #2a2a2a;
-    margin-top: -4px;
+    margin-top: -10px;
     text-align: center;
     padding: 20px;
     font-weight: 100;
     font-size: 25px;
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
 }
 
 #blue button {
@@ -152,4 +162,39 @@ footer {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    #blue div {
+        gap: 10px;
+    }
+
+    h1, header, h2 {
+        text-align: center;
+    }
+
+    article {
+        width: calc(50% - 10px);
+    }
+
+    article h3 {
+        height: 120px;
+    }
+
+    #last div {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    article {
+        width: calc(100%);
+        margin: 10px 0;
+    }
 }
