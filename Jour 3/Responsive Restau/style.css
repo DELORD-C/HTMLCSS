@@ -132,3 +132,49 @@ nav a {
     flex-wrap: wrap;
     gap: 20px;
 }
+
+@media screen and (max-width: 800px) {
+    nav a {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #two, #three {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #pics {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    #pics img {
+        margin: auto;
+        width: 100%;
+    }
+
+    #three img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav a {
+        font-size: 0.7em;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    #one {
+        grid-template-columns: 1fr;
+    }
+}
