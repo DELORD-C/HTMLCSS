@@ -1,0 +1,134 @@
+body {
+    background: linear-gradient(90deg, rgba(226,65,209,1) 0%, rgba(141,63,242,1) 100%);
+    margin: 0;
+    padding: 30px;
+}
+
+* {
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#gradient-bar-1 {
+    background: linear-gradient(90deg, rgba(226,65,209,0) 0%, rgb(238 183 48) 100%);
+}
+
+#gradient-bar-2 {
+    background: linear-gradient(90deg, rgb(238 183 48) 0%, rgba(226,65,209,0) 100%);
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+nav a {
+    width: 20%;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1em;
+}
+
+#one {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.whitebg {
+    background-color: #fff;
+}
+
+.yellowbg {
+    background: rgb(238 183 48);
+}
+
+#one .whitebg {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+#one .whitebg * {
+    display: block;
+    width: fit-content;
+    padding: 2px;
+    font-weight: 800;
+}
+
+#prices {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#prices div {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#prices span {
+    font-size: 4em;
+    font-family: system-ui;
+    font-weight: 100;
+}
+
+#prices p {
+    font-weight: 800;
+}
+
+#two {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#two > div {
+    text-align: center;
+    padding: 20px;
+}
+
+#two span {
+    font-size: 3em;
+}
+
+#three {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+#three p {
+    font-weight: 800;
+}
+
+#three button {
+    padding: 10px 20px;
+    border: none;
+}
+
+#title {
+    display: grid;
+    grid-template-columns: 1fr 130px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+#title div {
+    height: 15px;
+}
+
+#pics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
